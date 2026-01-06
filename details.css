@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    width: 100%;
+    max-width: 390px;
+    min-height: 100vh;
+    background: #f3ebdf;
+    padding: 12px;
+}
+
+.top-row{
+    display: flex;
+    align-items: flex-end;
+}
+
+.bi, .bi-arrow-left-short {
+    font-size: 44px;
+    color:#6a1314;
+}
+
+.header{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 40px;
+    color: #6a1314;
+    font-weight: 600;
+}

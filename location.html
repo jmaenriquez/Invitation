@@ -6,11 +6,56 @@
     <title>Location</title>
 
     <link rel="stylesheet" href="location.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+
+    
 </head>
 <body>
     <div class="main-container">
-        <h1>Location</h1>
-        <div></div>
+
+        <div class="top-row">
+            <i class="bi bi-arrow-left-short" id="backClick"></i>
+            <p class="header">VENUE LOCATION</p>
+        </div>
+
+        <div class="image">
+            <img src="images/map.jpg" alt="map image">
+        </div>
+        
+        <div class="direction">
+            <div class="row">
+                The event will take place at Luzviminda’s Events place - Cabanatuan city, N.E.
+            </div>
+            <div class="row">
+                Above is a direction guide on how to get to the place.
+            </div>
+            <div class="row">
+                Guests coming from San Jose City, Science City of Muñoz, and Talavera are advised to turn right at Jollibee Circum, then turn left  at Nyork’s Café. Proceed straight ahead; the destination will be on your right.
+            </div>
+            <div class="row">
+                Guests coming from Cabiao, San Isidro, Gapan, and San Leonardo are advised to turn left at the T-intersection near Jollibee Sumacab, then follow the right curve. Proceed straight; the destination will be on your left.
+            </div>
+        </div>
+
     </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const back = document.getElementById ('backClick');
+            
+            back.addEventListener ('click', () => {
+                window.history.back();
+            })
+        })
+    </script>
 </body>
 </html>
