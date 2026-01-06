@@ -32,7 +32,7 @@ body{
 .header{
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 85px;
+    margin-left: 100px;
     color: #6a1314;
     font-weight: bold;
 }
@@ -64,4 +64,5 @@ body{
     width: 60px;
     border-radius: 100%;
     background-color: #ffffff;
+
 }
