@@ -16,10 +16,19 @@
                 <div class="right-pane"></div>
 
                 <div>
-                    <button class="Opening">Click Me</button>
+                    <button class="Opening" id ="btnClick">Click Me</button>
                 </div>
             </div>
         </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const btn = document.getElementById('btnClick');
+                btn.addEventListener('click', () => {
+                window.location.href = 'front.html';
+                });
+            });
+        </script>
 
     </body>
 </html>
