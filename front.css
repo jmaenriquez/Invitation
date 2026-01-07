@@ -112,6 +112,11 @@ body{
         color 0.2s ease;
 }
 
+.nav-btn.pressed{
+    transform: translate(2px, 4px);
+    box-shadow: 1px 2px 0 #caa9a0;
+}
+
 button:active{
     background-color: #6a1314;
     color: #f3ebdf;

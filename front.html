@@ -60,18 +60,28 @@
     
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const buttons = document.querySelectorAll('.nav-btn');
+        const buttons = document.querySelectorAll('.nav-btn');
 
-            buttons.forEach(btn =>{
-                btn.addEventListener('click', () =>{
-                    const target = btn.getAttribute('data-target');
+        buttons.forEach(btn => {
+            const target = btn.getAttribute('data-target');
 
-                    setTimeout(() => {
-                        window.location.href = target;
-                    },180);
-                });
-            });
+        btn.addEventListener('pointerdown', () => {
+            btn.classList.add('pressed');
         });
+
+        btn.addEventListener('pointerup', () => {
+            btn.classList.remove('pressed');
+        });
+
+        btn.addEventListener('pointerleave', () => {
+            btn.classList.remove('pressed');
+        });
+
+        btn.addEventListener('click', () => {
+            window.location.href = target;
+        });
+    });
+});
     </script>
 </body>
 </html>
