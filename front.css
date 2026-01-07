@@ -5,7 +5,7 @@
 }
 
 body{
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,15 +13,111 @@ body{
 }
 
 .main-container{
+    position: relative;
     width: 100%;
     max-width: 390px;
-    min-height: 100vh;
+    min-height: 100dvh;
     background: #f3ebdf;
+    overflow: hidden;
 
     animation: fadeIn 0.6s ease forwards;
-
 }
 
+.header{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 140px;
+    font-weight: 600;
+    letter-spacing: 12px;
+    color: #6a1314;
+    text-shadow: 
+        6px 6px 0 #caa9a0;
+
+    z-index: 1;
+}
+
+.zaki{
+    position: relative;
+    display: block;
+    margin: 140px auto 0;
+    margin-top: 30px;
+    width: 70%;
+    z-index: 4;
+}
+
+.info{
+    position: absolute;
+    top: 210px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 1.4;
+    color: #a40000;
+    z-index: 5;
+    max-width: 130px;
+}
+
+.left-info{
+    left: 28px;
+    text-align: left;
+}
+
+.right-info{
+    right: 28px;
+}
+
+.welcome{
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 0px;
+    color: #a40000;
+    text-align: center;
+}
+
+.remarks{
+    font-size: 8px;
+    font-style: italic;
+    margin-top: 0 px;
+    color: #a40000;
+    text-align: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    gap: 14px;
+    margin: 24px auto 0;
+    justify-content: center;
+    
+}
+
+.buttons button {
+    border: 2px solid #6a1314;
+    background: transparent;
+    color: #6a1314;
+    padding: 2px;
+    border-radius: 777px;
+    font-size: 18px;
+    width: 150px;
+
+    box-shadow: 3px 3px 3px #caa9a0;
+    transition: 
+        transform 0.12s ease,
+        box-shadow 0.12s ease,
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+button:active{
+    background-color: #6a1314;
+    color: #f3ebdf;
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #6a1314;
+}
 
 @keyframes fadeIn {
         

@@ -6,10 +6,49 @@
     <title>Front</title>
 
     <link rel="stylesheet" href="front.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main-container">
-        <h1>This is my Front Page</h1>
+        
+        <h1 class="header">ZAKI</h1>
+
+        <img class="zaki" src="images/zaki_temp.png" alt="Zaki Pic">
+
+        <div class="info left-info">
+            <p>
+                1ST BIRTHDAY &<br>
+                DEDICATION <br>
+                12 PM TO 4 PM
+            </p>
+        </div>
+
+        <div class="info right-info">
+            <p>
+                FEB 21, 2026,<br>
+                LUZVIMINDA'S <br>
+                EVENT PLACE
+            </p>
+        </div>
+
+        <div class="texts">
+
+            <p class="welcome">
+                WE WOULD BE GLAD TO HAVE YOU!
+            </p>
+
+            <p class="remarks">
+                CLICK THE NAVIGATION BUTTONS BELOW TO SEE FURTHER DETAILS
+            </p>
+
+        </div>
 
         <div class="buttons">
             <button class="nav-btn" data-target = "details.html">Event Details</button>
@@ -26,7 +65,10 @@
             buttons.forEach(btn =>{
                 btn.addEventListener('click', () =>{
                     const target = btn.getAttribute('data-target');
-                    window.location.href = target;
+
+                    setTimeout(() => {
+                        window.location.href = target;
+                    },180);
                 });
             });
         });
