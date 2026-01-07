@@ -11,6 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f3ebdf;
 }
 
 .main-container{
@@ -23,13 +24,20 @@ body{
 .sub-container{
     position: relative;
     display: flex;
-    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+
+    transition:
+        transform 0.8s cubic-bezier(0.22, 1.28, 0.36, 1),
+        opacity 0.4s ease;
 }
 
 .left-pane,.right-pane{
     width: 50%;
     height: 100%;
     background-color: #6a1314;
+
+    transition: transform 0.9s cubic-bezier(.22,1.28,.36,1);
 }
 
 .left-pane{
@@ -55,5 +63,31 @@ body{
     color: #f3ebdf;
     font-weight: bold;
     border: 6px solid #f3ebdf;
+
     z-index: 10;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.Opening:active {
+    transform: translate(-50%, -50%) scale(0.95);
+}
+
+.opened .left-pane{
+    transform: translateX(-100%);
+}
+
+.opened .right-pane{
+    transform: translateX(100%);
+}
+
+.opened .Opening{
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.zoomed {
+    transform: scale(1.2);
+    opacity: 0;
 }

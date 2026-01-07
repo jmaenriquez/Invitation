@@ -24,10 +24,20 @@
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 const btn = document.getElementById('btnClick');
+                const container = document.querySelector('.sub-container');
+
                 btn.addEventListener('click', () => {
+                    container.classList.add('opened');
+
+                setTimeout(() => {
+                    container.classList.add('zoomed');
+                }, 500);
+
+                setTimeout(() => {
                     window.location.href = 'front.html';
-                });
-            });
+                }, 800);
+    });
+});
         </script>
 
     </body>
