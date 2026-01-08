@@ -36,3 +36,22 @@ body{
     color: #6a1314;
     font-weight: 600;
 }
+.content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #a40000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+ul{
+    list-style-type: none;
+    margin-right: 5px;
+}
+
+li{
+    margin-bottom: 10px;
+}
