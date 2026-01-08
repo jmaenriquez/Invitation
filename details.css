@@ -39,6 +39,28 @@ body{
     font-weight: 600;
 }
 
+.content{
+    padding: 25px;
+}
+
+.event{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #a40000;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.remarks{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    color: #a40000;
+    font-style: italic;
+}
+
 @keyframes fadeIn {
         
     from{
