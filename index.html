@@ -26,12 +26,24 @@
                 const btn = document.getElementById('btnClick');
                 const container = document.querySelector('.sub-container');
 
+                btn.addEventListener('pointerdown', () =>{
+                    btn,classList.add('pressed');
+                });
+
+                btn.addEventListener('pointerup', () =>{
+                    btn,classList.remove('pressed');
+                });
+
+                btn.addEventListener('pointerleave', () =>{
+                    btn,classList.remove('pressed');
+                });
+
                 btn.addEventListener('click', () => {
                     container.classList.add('opened');
 
                 setTimeout(() => {
                     container.classList.add('zoomed');
-                }, 500);
+                }, 800);
 
                 setTimeout(() => {
                     window.location.href = 'front.html';
