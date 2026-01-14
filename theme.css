@@ -91,6 +91,24 @@ body{
     font-weight: 300;
 }
 
+.img-content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.red-side img, .white-side img{
+    width: auto;
+    height: 140px;
+}
+
+.red-side, .white-side{
+    display: flex;
+}
+
 .sub-header{
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
