@@ -43,10 +43,11 @@ body{
 .zaki{
     position: relative;
     display: block;
-    margin: 140px auto 0;
+    margin: 200px auto 0;
     margin-top: 60px;
-    width: 70%;
-    z-index: 4;
+    margin-left: 80px;
+    width: 75%;
+    z-index: 3;
 }
 
 .info{
@@ -70,18 +71,25 @@ body{
     right: 28px;
 }
 
+
 .welcome{
+    z-index: 4;
+    position: relative;
+    display: block;
     font-size: 19px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: -60px;
     color: #a40000;
     text-align: center;
 }
 
 .remarks{
-    font-size: 8px;
+    z-index: 4;
+    position: relative;
+    display: block;
+    font-size: 6px;
     font-style: italic;
-    margin-top: 0 px;
+    margin-top: -5px;
     color: #a40000;
     text-align: center;
 }

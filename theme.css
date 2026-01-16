@@ -96,8 +96,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .red-side img, .white-side img{
