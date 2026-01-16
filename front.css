@@ -46,7 +46,7 @@ body{
     margin: 200px auto 0;
     margin-top: 60px;
     margin-left: 80px;
-    width: 75%;
+    width: 290px;
     z-index: 3;
 }
 
@@ -143,5 +143,6 @@ button:active{
         opacity: 1;
         transform: scale(1)
     }
+
 
 }
